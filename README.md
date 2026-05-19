@@ -17,6 +17,29 @@ Windows       | [![Build Status](https://build.osrfoundation.org/buildStatus/ico
 Gazebo Physics, a component of [Gazebo](https://gazebosim.org), provides an abstract physics interface
 designed to support simulation and rapid development of robot applications.
 
+# DARTNN Branch
+
+This branch targets Gazebo Harmonic (`gz-physics7`), which is the Gazebo release
+used by PX4 v1.16.2. It adds `dartnn-physics` as a submodule-based physics
+engine that keeps DART as the world solver and optionally overwrites the target
+model's canonical/root body state with a TorchScript drone dynamics model.
+
+Build only the custom engine:
+
+```bash
+git submodule update --init --recursive
+git config submodule.recurse true
+cmake -S . -B build
+cmake --build build --target gz-physics7-dartnn-plugin --parallel $(nproc)
+```
+
+When cloning or pulling this branch from another checkout, use:
+
+```bash
+git clone --recurse-submodules -b dartnn-physics-harmonic https://github.com/jsoone24/gz-physics.git
+git pull --recurse-submodules
+```
+
 # Table of Contents
 
 [Motivation](#motivation)

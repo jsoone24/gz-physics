@@ -108,7 +108,7 @@ set(GZ_MSVC_WPO OFF CACHE BOOL "Disable WPO")
 # Configure the build
 #============================================================================
 gz_configure_build(QUIT_IF_BUILD_ERRORS
-  COMPONENTS sdf heightmap mesh dartsim tpe bullet bullet-featherstone)
+  COMPONENTS sdf heightmap mesh dartsim dartnn-physics tpe bullet bullet-featherstone)
 
 
 #============================================================================

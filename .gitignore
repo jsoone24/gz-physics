@@ -2,6 +2,10 @@
 build
 build_*
 
+# Local recovery / generated plugin links
+.git.broken-worktree
+libgz-physics*-plugin.so
+
 # OS generated files
 .DS_Store
 *.swp
