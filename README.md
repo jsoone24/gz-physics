@@ -36,7 +36,7 @@ cmake --build build --target gz-physics7-dartnn-plugin --parallel $(nproc)
 When cloning or pulling this branch from another checkout, use:
 
 ```bash
-git clone --recurse-submodules -b dartnn-physics-harmonic https://github.com/jsoone24/gz-physics.git
+git clone --recurse-submodules -b dartnn-physics-harmonic https://github.com/postech-compsec/gz-physics.git
 git pull --recurse-submodules
 ```
 

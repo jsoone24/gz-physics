@@ -1,4 +1,4 @@
 [submodule "dartnn-physics"]
 	path = dartnn-physics
-	url = https://github.com/jsoone24/dartnn-physics.git
+	url = https://github.com/postech-compsec/dartnn-physics.git
 	branch = main
